@@ -51,8 +51,21 @@ function catAndMouse() {
 }
 
 // Desafio 8
-function fizzBuzz() {
-  // seu código aqui
+function fizzBuzz(num) {
+  let resultado = [];
+
+  for (let index = 0; index < num.length; index += 1) {
+    if (num[index] % 3 === 0 && num[index] % 5 === 0) {
+      resultado[index] = 'fizzBuzz';
+    } else if (num[index] % 5 === 0) {
+      resultado[index] = 'buzz';
+    } else if (num[index] % 3 === 0) {
+      resultado[index] = 'fizz';
+    } else {
+      resultado[index] = 'bug!'
+    }
+  }
+  return resultado;
 }
 
 // Desafio 9
@@ -94,7 +107,7 @@ function decode(letras) {
 }
 
 // Desafio 10
-function techList() {
+function techList(tech, name) {
   // seu código aqui
 }
 
