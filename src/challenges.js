@@ -119,7 +119,6 @@ function decode(letras) {
 
 // Desafio 10
 function techList(tech, name) {
-  // let seuNome = name;
   let array = [];
   tech.sort();
 
