@@ -20,7 +20,6 @@ function triangleCheck(lineA, lineB, lineC) {
   }
   return resultado;
 }
-console.log(triangleCheck(10, 14, 8));
 
 // Desafio 13
 function hydrate() {
