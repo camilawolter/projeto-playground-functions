@@ -56,11 +56,41 @@ function fizzBuzz() {
 }
 
 // Desafio 9
-function encode() {
-  // seu código aqui
+function encode(letras) {
+  let vogais = letras.split('');
+
+  for (let index = 0; index < vogais.length; index += 1) {
+    if (vogais[index] === 'a') {
+      vogais[index] = 1;
+    } else if (vogais[index] === 'e') {
+      vogais[index] = 2;
+    } else if (vogais[index] === 'i') {
+      vogais[index] = 3;
+    } else if (vogais[index] === 'o') {
+      vogais[index] = 4;
+    } else if (vogais[index] === 'u') {
+      vogais[index] = 5;
+    }
+  }
+  return vogais.join('');
 }
-function decode() {
-  // seu código aqui
+function decode(letras) {
+  let vogais = letras.split('');
+
+  for (let index = 0; index < vogais.length; index += 1) {
+    if (vogais[index] == 1) {
+      vogais[index] = 'a';
+    } else if (vogais[index] == 2) {
+      vogais[index] = 'e';
+    } else if (vogais[index] == 3) {
+      vogais[index] = 'i';
+    } else if (vogais[index] == 4) {
+      vogais[index] = 'o'
+    } else if (vogais[index] == 5) {
+      vogais[index] = 'u'
+    }
+  }
+  return vogais.join('');
 }
 
 // Desafio 10
