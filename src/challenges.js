@@ -9,12 +9,12 @@ function compareTrue(a, b) {
 
 // Desafio 2
 function calcArea(base, heigth) {
-  return (base * heigth) / 2
+  return (base * heigth) / 2;
 }
 
 // Desafio 3
-function splitSentence() {
-  // seu código aqui
+function splitSentence(frase) {
+  return frase.split(' ');
 }
 
 // Desafio 4
