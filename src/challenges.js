@@ -60,7 +60,6 @@ function catAndMouse(mouse, cat1, cat2) {
   }
   return resultado;
 }
-// console.log(catAndMouse([5,4,1]));
 
 // Desafio 8
 function fizzBuzz(num) {
@@ -120,7 +119,22 @@ function decode(letras) {
 
 // Desafio 10
 function techList(tech, name) {
-  // seu código aqui
+  // let seuNome = name;
+  let array = [];
+  tech.sort();
+
+  for (let index = 0; index < tech.length; index += 1) {
+    array.push(
+      {
+      tech: tech[index],
+      name,
+      }
+    )
+  }
+  if (array.length === 0) {
+    return 'Vazio!';
+  }
+  return array;
 }
 
 module.exports = {
